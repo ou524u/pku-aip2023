@@ -68,7 +68,7 @@ $ tree
 │   ├── autodiff.py
 │   ├── basic_operator.py
 │   ├── operators.py
-│   └── optimizer.py
+│   ├── optimizer.py
 │   ├── ...
 ├── pybind11
 │   ├── ...
@@ -83,12 +83,12 @@ $ tree
     ├── Tensor_kernels.inl
     ├── bind_Layer.cu
     ├── bind_Tensor.cu
-    ├── global.h
+    └── global.h
 ```
 
 
 
-### Usage Analize:
+### Usage Analysis:
 Codes in `src/` folder does the jobs of defining `myTensor` and `myLayers`. After binding, they provide the apis that are used in CNN networks. They've been previously partially written in `H01`, `H02` and binded in `H03`.
 
 The python codes are divided in 4 files, the `autodiff.py`, `basic_operator.py`, `operators.py`, `optimizer.py`. They are a re-written with base type `myTensor` and base api `myLayers` of files in `H05` and `H06`. That keeps the `autodiff` ablity, while `SGD` and `Adam` optimizer have been inplemented.
