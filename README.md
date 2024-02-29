@@ -46,7 +46,7 @@ mkdir build
 cd build
 cmake ..
 make
-# after that, you get xxx.cpython-38-x86_64-linux-gnu.so files. Copy it to modules_ready folder
+# after that, you get xxx.cpython-38-x86_64-linux-gnu.so files.
 # you should now switch to a conda env that supports pytorch & torchvision 
 python optimizer.py # that would download MNIST dataset automatically
 ```
