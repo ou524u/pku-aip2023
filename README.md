@@ -190,6 +190,7 @@ class SimpleCNN():
         # CNN parameters initialized
         self.weights = [self.conv1, self.conv2, self.fcw1, self.fcw2, self.fcb1, self.fcb2]
         # initialize the weights, and upload them in the optimizers.
+        # ...
 
     def forward(self, x, real_labels):
         # forward method defined with TensorOps, which have been build upon myLayers
@@ -215,6 +216,7 @@ class SimpleCNN():
     def Adam_epoch(self, X, y, lr=0.1, batch=100, beta1=0.9, beta2=0.999, epsilon=1e-8):
         # Adam optimizer inplemented
         # ...
+
     def train_nn(self, X_tr, y_tr, X_te, y_te, 
                  epochs=10, lr=0.5, batch=100, 
                  beta1=0.9, beta2=0.999, use_Adam=False):
